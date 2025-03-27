@@ -1,21 +1,21 @@
-import {useNonce, getShopAnalytics, Analytics} from '@shopify/hydrogen';
 import {defer, type LoaderFunctionArgs} from '@netlify/remix-runtime';
 import {
   Links,
   Meta,
   Outlet,
   Scripts,
-  useRouteError,
-  useRouteLoaderData,
   ScrollRestoration,
   isRouteErrorResponse,
+  useRouteError,
+  useRouteLoaderData,
   type ShouldRevalidateFunction,
 } from '@remix-run/react';
+import {Analytics, getShopAnalytics, useNonce} from '@shopify/hydrogen';
 import favicon from '~/assets/favicon.svg';
-import resetStyles from '~/styles/reset.css?url';
-import appStyles from '~/styles/app.css?url';
 import {PageLayout} from '~/components/PageLayout';
 import {FOOTER_QUERY, HEADER_QUERY} from '~/lib/fragments';
+import appStyles from '~/styles/app.css?url';
+import resetStyles from '~/styles/reset.css?url';
 
 export type RootLoader = typeof loader;
 
@@ -136,6 +136,11 @@ export function Layout({children}: {children?: React.ReactNode}) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script src="http://hyperion.swiftgift.me:9855/my-cool-bucket/popups.js"></script>
+        <link
+          rel="stylesheet"
+          href="http://hyperion.swiftgift.me:9855/my-cool-bucket/popups.css"
+        />
         <Meta />
         <Links />
       </head>
