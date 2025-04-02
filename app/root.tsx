@@ -136,11 +136,12 @@ export function Layout({children}: {children?: React.ReactNode}) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <script src="http://hyperion.swiftgift.me:9855/my-cool-bucket/popups.js?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=prodminio%2F20250327%2F%2Fs3%2Faws4_request&X-Amz-Date=20250327T071005Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=0e14ce5c538b30b1cbc32f589191cb6e187b18db749975069cf4912cae1a9e1c"></script>
+        <script src="https://cdn.gogiftmagic.com/upload/headless/popups.js" />
         <link
           rel="stylesheet"
-          href="http://hyperion.swiftgift.me:9855/my-cool-bucket/popups.css?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=prodminio%2F20250327%2F%2Fs3%2Faws4_request&X-Amz-Date=20250327T071048Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=ccc1c4638979eba22ee1612aa5db5d77b39e39d7b5905ac6bbda753f260b7f5f"
+          href="https://cdn.gogiftmagic.com/upload/headless/popups.css"
         />
+        <script src="https://cdn.gogiftmagic.com/upload/headless/env_var.js" />
         <Meta />
         <Links />
       </head>
