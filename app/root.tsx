@@ -136,12 +136,12 @@ export function Layout({children}: {children?: React.ReactNode}) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <script src="https://cdn.gogiftmagic.com/upload/headless/popups.js" />
+        <script src="https://static.emailmagnet.ai/popups.js" />
         <link
           rel="stylesheet"
-          href="https://cdn.gogiftmagic.com/upload/headless/popups.css"
+          href="https://static.emailmagnet.ai/popups.css"
         />
-        <script src="https://cdn.gogiftmagic.com/upload/headless/env_var.js" />
+        <script src="https://static.emailmagnet.ai/env_var.js" />
         <Meta />
         <Links />
       </head>
